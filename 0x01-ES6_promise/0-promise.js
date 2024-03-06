@@ -1,5 +1,3 @@
-export default function getResponseFromAPI(success){
-    return new Promise((resolve,reject)=>{if (success) resolve({status:200});
-    reject( Error ("the Api isnt returning"));
-});
-}
+export default function getResponseFromAPI() {
+    return new Promise((resolve, reject) => [resolve, reject]);
+  }
